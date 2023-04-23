@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 97%;
+}
+
+/* HOME PAGE START */
+
+/* Intro Page
+--------------------- */
+
+#intro {
+    position: relative;
+    overflow: hidden;
+    min-height: 600px;
+    padding-top: 9em;
+}
+
+#intro .top-right-gradient {
+    position: absolute;
+    top: -40%;
+    right: -30%;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background: linear-gradient(#ee9ca7, #ec4357);
+}
+
+#intro .intro-left {
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    padding: 3em 0;
+}
+
+#intro .intro-left h1 {
+    font-size: 2.5em;
+    color: #241b57;
+    line-height: 1.5em;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+#intro .intro-left h1:after {
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    width: 40px;
+    height: 4px;
+    content: "";
+    border-radius: 5px;
+    background: #ec4357;
+    opacity: 0.4;
+}
+
+#intro .intro-left p {
+    font-size: 1.125em;
+    line-height: 1.75em;
+}
+
+#intro .intro-left a.intro-cta {
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    max-width: 180px;
+    margin-top: 2em;
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+}
+
+#intro .intro-right {
+    position: relative;
+    display: inline-block;
+    margin-left: 15em;
+    padding-top: 80px;
+}
+
+#intro .intro-right img {
+    max-width: 600px;
+    height: 400px;
+}
+
+#intro .bottom-left-gradient {
+    position: absolute;
+    bottom: 10px;
+    left: -9%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(#c779d0, #4bc0c8);
+}
+
+/* ABOUT PAGE START */
+
+.about-section{
+    background: url(../img/about/lib.jpg) no-repeat left;
+    background-size: 100%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 150px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    /* font-size: 13px; */
+    /* color: #545454; */
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+/* ABOUT PAGE END */
+
+/* Page Banner */
+
+.page-banner {
+    background: url("../img/home/banner.png") no-repeat;
+    background-size: cover;
+    padding: 130px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.page-banner h1 {
+    font-size: 2.8em;
+    font-weight: 500;
+    color: #fff;
+}
+
+.page-banner h3 {
+    color: #fff;
+    margin-bottom: 35px;
+    font-weight: 300;
+}
+
+.page-banner a {
+    color: #fff;
+    font-weight: 400;
+    max-width: 400px;
+    margin: 3em 0;
+    padding: 1em 3em;
+    text-align: center;
+    border-radius: 3px;
+    background: #241b57;
+}
+
+/* HOME PAGE END */
+
+/* DEVELOPERS PAGE START */
+
+.our-team {
+    padding: 30px 0 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    
+    background: linear-gradient(45deg, rgba(120, 120, 250, 0.05) 10%, transparent 10%),
+        linear-gradient(65deg, transparent 70%, rgba(120, 120, 250, 0.05) 70%),
+        linear-gradient(15deg, rgba(120, 120, 250, 0.05) 80%, transparent 80%),
+        linear-gradient(25deg, rgba(120, 120, 250, 0.05) 30%, transparent 30%),
+        linear-gradient(-35deg, rgba(120, 120, 250, 0.05) 50%, transparent 50%),
+        rgba(120, 120, 250, 0.05);
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.35 ); */
+}
+
+.our-team .picture {
+    display: inline-block;
+    margin-bottom: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.our-team .picture::before {
+    content: "";
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: -2;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+    background: rgba(120, 120, 250, 1);
+}
+
+.our-team:hover .picture::before {
+    height: 100%;
+}
+
+.our-team .picture::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: white;
+}
+
+.our-team .picture img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: 0.3s ease 0s;
+}
+
+.our-team:hover .picture img {
+    box-shadow: 0 0 0 1px #f7f5ec;
+    transform: scale(0.8);
+}
+
+.our-team .title {
+    display: block;
+    font-size: 15px;
+    color: #383838;
+    text-transform: capitalize;
+    font-weight: 200;
+}
+
+.our-team .name {
+    font-size: 18px;
+    color: #383838;
+}
+
+.our-team .social {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+    background: rgba(120, 120, 250, 1);
+}
+
+.our-team:hover .social {
+    bottom: 0;
+}
+
+.our-team .social li {
+    display: inline-block;
+}
+
+.our-team .social li a {
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+.our-team .social li a:hover {
+    color: #1369ce;
+    background-color: #f7f5ec;
+}
+
+/* DEVELOPERS PAGE END */
+
+/* CSS MEDIA QUERY */
+/* Lebar Handphone Minimum : 336px */
+
+@media screen and (min-width: 992px) {
+    .about-section {
+        margin: 100px 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #intro {
+        min-height: 400px;
+        padding-top: 6em;
+    }
+  
+    #intro {
+      max-height: 300px !important;
+      text-align: center;
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-top: 40px !important;
+    }
+
+    #intro .intro-right img {
+      width: 380px;
+    }
+  
+    #intro h1 {
+      font-size: 24px !important;
+    }
+  
+    #intro h1::after {
+      margin-left: 180px;
+      margin-bottom: 10px;
+    }
+  
+    #intro .intro-left .intro-cta {
+      display: inline-block !important;
+    }
+  
+    /* banner responsive */
+  
+    .page-banner {
+      padding: 100px 0;
+      text-align: center;
+      background-position: center;
+    }
+  
+    .page-banner h1 {
+      font-size: 28px !important;
+      font-weight: 700;
+    }
+  
+    .page-banner h3 {
+      font-size: 16px !important;
+      margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .undraw-growth {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}
